@@ -3,10 +3,10 @@ FROM node:16
 WORKDIR /usr/src/app
 
 COPY ./package*.json ./
-COPY ./server ./server
+COPY ./src ./src
 
 RUN npm install
 
 EXPOSE 80
 
-CMD [ "npm", "run", "serve" ]
+CMD [ "npm", "run", "start" ]
